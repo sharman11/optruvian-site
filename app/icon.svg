@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+  <style>
+    :root { --m: #09090b; }
+    @media (prefers-color-scheme: dark) {
+      :root { --m: #ffffff; }
+    }
+  </style>
+  <circle cx="12" cy="12" r="10.5" stroke="var(--m)" stroke-width="1.5" />
+  <path
+    d="M12 4.2
+       C 12.45 10.7, 13.3 11.55, 19.8 12
+       C 13.3 12.45, 12.45 13.3, 12 19.8
+       C 11.55 13.3, 10.7 12.45, 4.2 12
+       C 10.7 11.55, 11.55 10.7, 12 4.2 Z"
+    fill="var(--m)" />
+</svg>
