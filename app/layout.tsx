@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 import ClickSpark from "@/components/ClickSpark";
+
+const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_ID;
 
 export const metadata: Metadata = {
   title: "Optruvian · AI products for everyday work",
@@ -37,6 +40,7 @@ export default function RootLayout({
         >
           {children}
         </ClickSpark>
+        {GA_MEASUREMENT_ID && <GoogleAnalytics gaId={GA_MEASUREMENT_ID} />}
       </body>
     </html>
   );
